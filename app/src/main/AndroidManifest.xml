@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="www.softcodes.patientrecords">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logohealth"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logohealth"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DoctorSettings"
+            android:label="Settings"
+            android:parentActivityName=".Homeuser"></activity>
+        <activity android:name=".EditProfile"
+            android:label="Edit profile"
+            android:parentActivityName=".DoctorSettings"/>
+        <activity android:name=".PatientsList"
+            android:label="Patient Control Center"
+            android:parentActivityName=".Homeuser"/>
+        <activity
+            android:name=".Homeuser"
+            android:label="Doctor Dashboard" />
+        <activity
+            android:name=".DoctorHome"
+            android:label="@string/title_activity_doctor_home" />
+        <activity
+            android:name=".RegisterPatient"
+            android:label="Register A Patient"
+            android:parentActivityName=".Homeuser" />
+        <activity android:name=".Signup" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
